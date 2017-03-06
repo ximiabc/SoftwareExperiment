@@ -1,0 +1,27 @@
+  <%@ page language="java" import="java.util.*" pageEncoding="utf-8"%>
+    <div class="foot">
+        <div class="foot_main">
+            <p>
+                <a href="#">联系我们</a><span>|</span> <a href="#">法律声明</a><span>|</span> <a href="adminindex_toLogin.action">后台管理</a><span>|</span>
+                <a href="#">旧版网站</a>
+            </p>
+            <p>
+                <label>
+                    版权所有：南京林业大学信息中心
+                </label>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label>
+                    联系电话：025-85427130
+                </label>
+            </p>
+            <p>
+                <label>
+                    地址：南京市龙蟠路159号
+                </label>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label>
+                    苏ICP备-010872
+                </label>
+            </p>
+        </div>
+    </div>

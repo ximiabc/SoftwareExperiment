@@ -1,0 +1,46 @@
+<%@ page language="java" import="java.util.*" pageEncoding="utf-8"%>
+
+<div class="headCenter" id="headCenter">
+	<div class="headMenu" id="headMenu">
+		<div class="headMenuTelLogo"></div>
+		<div class="headMenuTelCenter">
+			<div class="headMenu01" id="headMenu01"><a href="viewlogin">中心服务热线</a></div>
+			<div class="headMenu02" id="headMenu02">0258-5427130</div>
+		</div>
+	</div>
+	<div class="index_top_out">
+		<div id="index_nav" class="index_top">
+			<div class="index_nav">
+				<ul>
+					<li ><a href="viewindex">首页</a></li>
+					<li><a href="viewcentre">中心概括</a></li>
+					<li><a href="viewnews">新闻中心</a></li>
+					<li><a href="viewlabs">实验教学</a></li>
+					<li><a href="viewrule">规章制度</a></li>
+					<li><a href="viewdevice">实验仪器</a></li>
+					<li><a href="viewreport">申报材料</a></li>
+					<li><a href="viewteacher">师资队伍</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<script>
+   	window.onload=function(){
+		var nav=document.getElementById("index_nav");
+		var a=nav.getElementsByTagName("a");
+		var url= ["viewindex","viewcentre","viewnews","viewlabs","viewrule","viewdevice","viewreport","viewteacher"];//存放导航栏相应的路径名
+		var urlP= ["","centerfinds","newsview","labsdesc","ruledesc","devicedesc","reportview","teacherdesc"];//存放额外的路径名
+		var num;
+		var pathname=window.location.pathname.split("/");
+		var get=pathname[pathname.length-1];
+		for(var i=0;i<a.length;i++){get==url[i]? num=i : null;}
+		if(num!=null){a[num].className="cur";}
+		else{
+			var getP=(get.split("?"))[0];
+			for(var i=0;i<a.length;i++){getP==urlP[i]? num=i : null;}
+		 	num!=null ? a[num].className="cur" : a[0].className="cur";
+		}
+	};
+</script>
