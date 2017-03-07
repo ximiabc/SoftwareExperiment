@@ -60,7 +60,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 									<c:if test="${pageBean.currentPage == pageNums }">
 										<a href="#" class="cur">${pageNums }</a>
 									</c:if> <c:if test="${pageBean.currentPage != pageNums }">
-										<a href="newsindexs?pageNum=${pageNums }">${pageNums }</a>
+										<a href="reportindexs?pageNum=${pageNums }">${pageNums }</a>
 									</c:if>
 								</li>
 							</s:iterator>
