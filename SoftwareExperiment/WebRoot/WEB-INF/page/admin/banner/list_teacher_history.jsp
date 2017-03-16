@@ -60,7 +60,7 @@
 		<span>位置：</span>
 		<ul class="placeul">
 			<li><a href="#">首页</a></li>
-			<li><a href="#">新闻管理</a></li>
+			<li><a href="#">师资队伍</a></li>
 		</ul>
 	</div>
 
@@ -70,7 +70,7 @@
 				<tr>
 					<th>编号</th>
 					<th width="100px;">缩略图</th>
-					<th>新闻标题</th>
+					<th>标题</th>
 					<th>浏览量</th>
 					<th>发布时间</th>
 					<th>操作</th>
@@ -81,7 +81,7 @@
 				<s:iterator value="pageBean.recordList" var="n" status="indexs">
 					<tr>
 						<td>${indexs.index+1 }</td>
-						<td><img src="" style="width: 70px;height: 35px;"/></td>
+						<td><img src="${n.path }" style="width: 70px;height: 35px;"/></td>
 						<td><a href="Manageteacherview?id=${n.id }">${n.titles }</a>
 						</td>
 						<td>${n.count }</td>
@@ -112,12 +112,10 @@
 						</c:if>
 					</li>
 				</s:iterator>
-
 				<li><a href="#">></a></li>
 			</ul>
 		</div>
 	</div>
 </body>
-
 </html>
 

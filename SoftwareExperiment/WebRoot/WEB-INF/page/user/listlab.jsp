@@ -9,7 +9,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>郑州轻工业学院软件学院</title>
+<title>郑州轻工业学院软件学院实验示范中心</title>
 <link href="${pageContext.request.contextPath}/user/css/style.css"
 	type="text/css" rel="stylesheet" />
 </head>
@@ -26,7 +26,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 		<div class="list_center_main">
 			<div class="list_mainleft">
 				<dl>
-					<dt>栏目中心</dt>
+					<dt>实验教学</dt>
 					<s:iterator value="pageBean.recordList">
 						<dd class="cur">
 							<a href="labsdesc?id=${id }&pageNum=${pageBean.currentPage }">${titles }</a>
@@ -36,7 +36,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				<!-- 分页 -->
 					<div class="pageing">
 						<ul class="page">
-							<li><a href="#"><</a></li>
+							<li><a href="labsindex?pageNum=${pageNums -1}"><</a></li>
 							<s:iterator begin="pageBean.beginPageIndex"
 								end="pageBean.endPageIndex" var="pageNums">
 								<li
@@ -50,7 +50,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 								</li>
 							</s:iterator>
 
-							<li><a href="#">></a></li>
+							<li><a href="labsindex?pageNum=${pageNums }">></a></li>
 						</ul>
 						<!-- <ul class="pageingtz">
 							<li>跳转：<input type="text" class="input" />&nbsp;页&nbsp;<a
@@ -64,10 +64,10 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 					<div class="line"></div>
 					<div class="list06">
 						<div class="list06left list06left">
-							<h4 class="h4">通知公告&nbsp;&nbsp;Announcements</h4>
+							<h4 class="h4">详细内容&nbsp;&nbsp;</h4>
 						</div>
 						<div class="list06right list06right licon">
-							<span class="a13">当前位置：首页 > 通知公告</span>
+							<span class="a13">当前位置：首页 > 实验教学</span>
 						</div>
 					</div>
 					<ul>
@@ -92,7 +92,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 					</div>
 					</c:if>
 					<c:if test="${beans == null }">
-						<center>暂无内容</center>
+						<center>请点击侧栏查看</center>
 					</c:if>
 					</ul>
 					

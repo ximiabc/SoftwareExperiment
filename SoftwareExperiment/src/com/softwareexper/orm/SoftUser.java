@@ -19,9 +19,18 @@ public class SoftUser implements java.io.Serializable {
 	private Date loginDate;//登录日期
 	private String ipaddress;//登录ip
 	private String tureName;//真实姓名
+	private String rule;
 	
 	public SoftUser(){
 	}
+	public String getRule() {
+		return rule;
+	}
+
+	public void setRule(String rule) {
+		this.rule = rule;
+	}
+
 
 	public Integer getId() {
 		return id;
@@ -69,6 +78,12 @@ public class SoftUser implements java.io.Serializable {
 
 	public void setTureName(String tureName) {
 		this.tureName = tureName;
+	}
+
+	public String toString() {
+		return "SoftUser [id=" + id + ", username=" + username + ", password="
+				+ password + ", loginDate=" + loginDate + ", ipaddress="
+				+ ipaddress + ", tureName=" + tureName + "]";
 	}
 	
 

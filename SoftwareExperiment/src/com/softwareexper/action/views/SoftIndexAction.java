@@ -88,5 +88,8 @@ public class SoftIndexAction extends BaseAction<SoftRules>{
 		return pageBean;
 	}
 	
+	public String exit() {
+		return "exit";
+	}
 	
 }

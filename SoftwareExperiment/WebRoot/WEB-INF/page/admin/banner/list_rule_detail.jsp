@@ -9,7 +9,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>南京林业大学</title>
+<title>后台管理</title>
 <link href="${pageContext.request.contextPath}/user/css/style.css"
 	type="text/css" rel="stylesheet" />
 </head>
@@ -21,7 +21,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 					<h4 class="h4">通知公告&nbsp;&nbsp;Announcements</h4>
 				</div>
 				<div class="list07right list07right licon">
-					<span class="a13">当前位置：首页 > 通知公告</span>
+					<span class="a13">当前位置：首页 > 规章制度</span>
 				</div>
 			</div>
 			<div class="detail_title">

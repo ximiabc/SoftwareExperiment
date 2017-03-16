@@ -149,7 +149,21 @@
 				</li>
 			</ul>
 		</dd>
-
+		<dd>
+			<div class="title">
+				<span><img
+					src="${pageContext.request.contextPath}/admin/images/leftico01.png" />
+				</span>账号管理
+			</div>
+			<ul class="menuson">
+				<li><cite></cite><a href="Userupdate"
+					target="rightFrame">修改密码</a><i></i>
+				</li>
+				<li><cite></cite><a href="Useradd"
+					target="rightFrame">添加账号</a><i></i>
+				</li>
+			</ul>
+		</dd>
 	</dl>
 
 </body>

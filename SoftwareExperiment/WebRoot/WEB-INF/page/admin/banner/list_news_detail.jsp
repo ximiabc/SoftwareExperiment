@@ -18,10 +18,10 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 		<div class="detail_centerbg">
 			<div class="list07">
 				<div class="list07left list07left">
-					<h4 class="h4">通知公告&nbsp;&nbsp;Announcements</h4>
+					<h4 class="h4">新闻中心&nbsp;&nbsp;</h4>
 				</div>
 				<div class="list07right list07right licon">
-					<span class="a13">当前位置：首页 > 通知公告</span>
+					<span class="a13">当前位置：首页 > 新闻中心</span>
 				</div>
 			</div>
 			<div class="detail_title">

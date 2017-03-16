@@ -45,6 +45,8 @@
 
 			<!-- 后台管理页 -->
 			<result name="login">/WEB-INF/page/admin/login.jsp</result>
+			<!-- 退出登录 -->
+			<result name="exit">/WEB-INF/page/admin/exit.jsp</result>
 		</action>
 	</package>
 

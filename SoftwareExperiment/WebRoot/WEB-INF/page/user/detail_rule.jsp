@@ -9,7 +9,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>南京林业大学</title>
+<title>郑州轻工业学院软件学院实验示范中心</title>
 <link href="${pageContext.request.contextPath}/user/css/style.css"
 	type="text/css" rel="stylesheet" />
 </head>
@@ -19,10 +19,10 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 		<div class="detail_centerbg">
 			<div class="list07">
 				<div class="list07left list07left">
-					<h4 class="h4">新闻中心&nbsp;&nbsp;Announcements</h4>
+					<h4 class="h4">规章制度&nbsp;&nbsp;Regulations</h4>
 				</div>
 				<div class="list07right list07right licon">
-					<span class="a13">当前位置：首页 > 新闻中心</span>
+					<span class="a13">当前位置：首页 > 规章制度</span>
 				</div>
 			</div>
 			<div class="detail_title">
@@ -48,6 +48,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 					<a href="ruledesc?id=${down.id }" class="a14 underline right"><c:if test="${down != null }">下一篇：${down.titles }</c:if></a>
 				</p>
 			</div>
+			<a href="down_down?fileName=${beans.path }">附件下载 ${beans.path }</a>
 		</div>
 	</div>
 	<%@include file="button.jspf"%>

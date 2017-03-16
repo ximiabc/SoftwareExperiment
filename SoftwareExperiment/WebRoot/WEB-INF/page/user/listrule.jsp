@@ -11,7 +11,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>郑州轻工业学院软件学院</title>
+<title>郑州轻工业学院软件学院实验示范中心</title>
 <link href="${pageContext.request.contextPath}/user/css/style.css"
 	type="text/css" rel="stylesheet" />
 </head>
@@ -31,10 +31,10 @@
 					<div class="line"></div>
 					<div class="list06">
 						<div class="list06left list06left">
-							<h4 class="h4">通知公告&nbsp;&nbsp;Announcements</h4>
+							<h4 class="h4">规章制度&nbsp;&nbsp;Regulations</h4>
 						</div>
 						<div class="list06right list06right licon">
-							<span class="a13">当前位置：首页 > 通知公告</span>
+							<span class="a13">当前位置：首页 > 规章制度</span>
 						</div>
 					</div>
 					<ul>
@@ -53,7 +53,7 @@
 					<!-- 分页 -->
 					<div class="pageing">
 						<ul class="page">
-							<li><a href="#"><</a>
+							<li><a href="ruleall?pageNum=${pageNums -1}"><</a>
 							</li>
 							<s:iterator begin="pageBean.beginPageIndex"
 								end="pageBean.endPageIndex" var="pageNums">
@@ -66,7 +66,7 @@
 										<a href="ruleall?pageNum=${pageNums }">${pageNums }</a>
 									</c:if></li>
 							</s:iterator>
-							<li><a href="#">></a>
+							<li><a href="ruleall?pageNum=${pageNums }">></a>
 							</li>
 						</ul>
 					</div>

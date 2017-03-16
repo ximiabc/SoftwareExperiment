@@ -12,7 +12,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>无标题文档</title>
+<title>后台管理</title>
 <link href="${pageContext.request.contextPath}/admin/css/style.css"
 	rel="stylesheet" type="text/css" />
 <script type="text/javascript"
@@ -41,7 +41,7 @@ var ue = UE.getEditor("editor");
 
 	
 	<center>
-	<form action="Managenewswrite" enctype="multipart/form-data">
+	<form action="Managenewswrite" enctype="multipart/form-data" method="post">
 		<center style="font-size: 20px;font-style: !important;">请添加新闻标题：<input type="text" style="font-size: 20px;font-style: !important;background-color:#cceeff;" name="titles"/></center>
 		<script name="context" id="editor" type="text/plain" style="width:1024px;height:500px;"></script>
 		<!-- <input name="content" id="qwer" type="text" style="width:1024px;height:500px;"/> -->

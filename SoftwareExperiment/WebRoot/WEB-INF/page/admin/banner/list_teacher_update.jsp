@@ -12,7 +12,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>无标题文档</title>
+<title>后台管理</title>
 <link href="${pageContext.request.contextPath}/admin/css/style.css"
 	rel="stylesheet" type="text/css" />
 <script type="text/javascript"
@@ -61,7 +61,7 @@
 		<ul class="placeul">
 			<li><a href="#">首页</a>
 			</li>
-			<li><a href="#">课程列表</a>
+			<li><a href="#">师资队伍</a>
 			</li>
 		</ul>
 	</div>
@@ -82,7 +82,7 @@
 				<tr>
 					<th>编号</th>
 					<th width="100px;">缩略图</th>
-					<th>新闻标题</th>
+					<th>标题</th>
 					<th>浏览量</th>
 					<th>发布时间</th>
 					<th>操作</th>
@@ -93,7 +93,7 @@
 				<s:iterator value="pageBean.recordList" var="n" status="indexs">
 					<tr>
 						<td>${indexs.index+1 }</td>
-						<td><img src="" style="width: 70px;height: 35px;"/></td>
+						<td><img src="${pageContext.request.contextPath}/uploads/files/${n.path }" style="width: 70px;height: 35px;"/></td>
 						<td><a href="Manageteacherview?id=${n.id }">${n.titles }</a>
 						</td>
 						<td>${n.count }</td>
@@ -113,7 +113,7 @@
 		<link href="${pageContext.request.contextPath}/user/css/style.css" type="text/css" rel="stylesheet" />
 		<div class="pageing">
 			<ul class="page">
-				<li><a href="#"><</a></li>
+				<li><a href="Manageteacherupdate?pageNum=${pageNums -1}"><</a></li>
 				<s:iterator begin="pageBean.beginPageIndex"
 					end="pageBean.endPageIndex" var="pageNums">
 					<li
@@ -126,7 +126,7 @@
 					</li>
 				</s:iterator>
 
-				<li><a href="#">></a></li>
+				<li><a href="Manageteacherupdate?pageNum=${pageNums }">></a></li>
 			</ul>
 		</div>
 	</div>

@@ -24,4 +24,5 @@ public class AdminBaseAction extends ActionSupport{
 	public String toLogin(){
 		return "toLogin";
 	}
+	
 }

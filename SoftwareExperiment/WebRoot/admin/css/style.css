@@ -296,3 +296,8 @@ h2{font-weight:normal;}
 .submitBtn{width: 130px;height: 35px;margin:25px;line-height:35px;background:#3eafe0;font-size: 14px;font-weight: bold;border-radius:3px;color: #fff;cursor: pointer;}
 .submitBtn:hover{color:#fff; background:#d98c1d;}
 .submitBtn:active{color:#fff; background:#3692c6;}
+/*fileimg*/
+.file-box{position:relative;width:120px;height: 150px;margin: 20px 30px 0;}
+.file-head{padding-top: 10px;}
+.file{position:absolute; top:0; left:0; height:150px;width:120px;filter:alpha(opacity:0);opacity: 0;}
+#file_img{width:100%;max-height: 150px;overflow: hidden;}

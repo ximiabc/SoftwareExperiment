@@ -1,4 +1,5 @@
 ﻿<%@ page language="java" import="java.util.*" pageEncoding="utf-8"%>
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%
 String path = request.getContextPath();
 String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
@@ -31,13 +32,15 @@ $(function(){
             
     <div class="topright">    
     <ul>
+    <li><a>当前在线：<strong>${linecount }</strong></a></li>
+    <li><a>累计访问量：<strong>${totalcount }</strong></a></li>
     <li><span><img src="${pageContext.request.contextPath}/admin/images/help.png" title="帮助"  class="helpimg"/></span><a href="#">帮助</a></li>
     <li><a href="#">关于</a></li>
-    <li><a href="adminManager_outline.action" target="_parent">退出</a></li>
+    <li><a href="viewexit" target="_parent">退出</a></li>
     </ul>
      
     <div class="user">
-    <span>欢迎${sessionScope.admin.truename}</span>
+    <span>欢迎${admins.tureName}</span>
     <!-- <i>消息</i>
     <b>5</b> -->
     </div>    

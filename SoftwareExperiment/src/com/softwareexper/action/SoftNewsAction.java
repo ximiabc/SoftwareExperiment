@@ -133,7 +133,9 @@ public class SoftNewsAction extends BaseAction<SoftNews>{
 	public String write() {
 		SoftNews news=new SoftNews();
 		news.setTitles(getModel().getTitles());
+		System.out.println(getModel().getTitles());
 		news.setContext(getModel().getContext());
+		System.out.println(getModel().getContext());
 		news.setDate(new Date());
 		news.setView(true);
 		news.setCount(0);

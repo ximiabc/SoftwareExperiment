@@ -11,7 +11,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>实验教学</title>
+<title>后台管理</title>
 <link href="${pageContext.request.contextPath}/admin/css/style.css"
 	rel="stylesheet" type="text/css" />
 <script type="text/javascript"
@@ -36,7 +36,7 @@
 		<ul class="placeul">
 			<li><a href="#">首页</a>
 			</li>
-			<li><a href="#">新闻中心</a>
+			<li><a href="#">实验教学</a>
 			</li>
 		</ul>
 	</div>
@@ -45,8 +45,8 @@
 		var ue = UE.getEditor('editor');
 	</script>
 	<center>
-	<form action="Managelabswrite">
-		<center style="font-size: 20px;font-style: !important;">请添加新闻标题：<input type="text" style="font-size: 20px;font-style: !important;background-color:#cceeff;" name="titles"/></center>
+	<form action="Managelabswrite" method="post">
+		<center style="font-size: 20px;font-style: !important;">请添加标题：<input type="text" style="font-size: 20px;font-style: !important;background-color:#cceeff;" name="titles"/></center>
 		<script name="context" id="editor" type="text/plain" style="width:1024px;height:500px;"></script>
 		<input class="submitBtn" type="submit" name="提交"/>
 	</form>

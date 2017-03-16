@@ -101,7 +101,7 @@
 				<link href="${pageContext.request.contextPath}/user/css/style.css" type="text/css" rel="stylesheet" />
 				<div class="pageing">
 					<ul class="page">
-						<li><a href="#"><</a>
+						<li><a href="Managenewshistory?pageNum=${pageNums -1}"><</a>
 						</li>
 						<s:iterator begin="pageBean.beginPageIndex"
 							end="pageBean.endPageIndex" var="pageNums">
@@ -114,7 +114,7 @@
 								</c:if></li>
 						</s:iterator>
 
-						<li><a href="#">></a>
+						<li><a href="Managenewshistory?pageNum=${pageNums }">></a>
 						</li>
 					</ul>
 					<!-- <ul class="pageingtz">

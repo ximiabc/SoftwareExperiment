@@ -11,7 +11,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>郑州轻工业学院软件学院</title>
+<title>郑州轻工业学院软件学院实验示范中心</title>
 <link href="${pageContext.request.contextPath}/user/css/style.css"
 	type="text/css" rel="stylesheet" />
 </head>
@@ -28,11 +28,7 @@
 		<div class="list_center_main">
 			<div class="list_mainleft">
 				<dl>
-					<dt>栏目中心</dt>
-					<!-- <dd class="cur">
-						<a href="#">通知公告</a>
-					</dd>
-					 -->
+					<dt>中心概括</dt>
 						<s:iterator value="pageBean.recordList">
 						<dd class="cur">
 							<a href="centerfinds?id=${id }" target="main">${titles }</a>
@@ -46,7 +42,7 @@
 					<div class="line"></div>
 					<div class="list06">
 						<div class="list06left list06left">
-							<h4 class="h4">中心概括&nbsp;&nbsp;Center Generalize</h4>
+							<h4 class="h4">详细内容&nbsp;&nbsp;</h4>
 						</div>
 						<div class="list06right list06right licon">
 							<span class="a13">当前位置：首页 > 中心概括</span>
@@ -73,7 +69,7 @@
 					</div>
 					</c:if>
 					<c:if test="${beans == null }">
-						<center>暂无内容</center>
+						<center>请点击侧栏查看</center>
 					</c:if>
 				
 				</div>

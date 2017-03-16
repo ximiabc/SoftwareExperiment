@@ -26,7 +26,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   	<s:fielderror></s:fielderror>
         <div class="result-wrap">
         <center>
-        	<p style="color: red;">请自觉遵守相关法律法规,上传合法资源</p>
+        	<p style="color: red;">请自觉遵守相关法律法规,上传合法资源,恭喜你成功上传</p>
         	<hr>
             <div class="result-content">
                 <form action="upload" method="post" id="myform" name="myform" enctype="multipart/form-data">

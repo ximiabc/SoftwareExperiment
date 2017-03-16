@@ -1,12 +1,7 @@
 <%@ page language="java" import="java.util.*" pageEncoding="utf-8"%>
 
-<div class="headCenter" id="headCenter">
+<div style="background-color: rgb(3,145,219);" class="headCenter" id="headCenter">
 	<div class="headMenu" id="headMenu">
-		<div class="headMenuTelLogo"></div>
-		<div class="headMenuTelCenter">
-			<div class="headMenu01" id="headMenu01"><a href="viewlogin">中心服务热线</a></div>
-			<div class="headMenu02" id="headMenu02">0258-5427130</div>
-		</div>
 	</div>
 	<div class="index_top_out">
 		<div id="index_nav" class="index_top">
@@ -30,17 +25,9 @@
    	window.onload=function(){
 		var nav=document.getElementById("index_nav");
 		var a=nav.getElementsByTagName("a");
-		var url= ["viewindex","viewcentre","viewnews","viewlabs","viewrule","viewdevice","viewreport","viewteacher"];//存放导航栏相应的路径名
-		var urlP= ["","centerfinds","newsview","labsdesc","ruledesc","devicedesc","reportview","teacherdesc"];//存放额外的路径名
-		var num;
-		var pathname=window.location.pathname.split("/");
-		var get=pathname[pathname.length-1];
-		for(var i=0;i<a.length;i++){get==url[i]? num=i : null;}
-		if(num!=null){a[num].className="cur";}
-		else{
-			var getP=(get.split("?"))[0];
-			for(var i=0;i<a.length;i++){getP==urlP[i]? num=i : null;}
-		 	num!=null ? a[num].className="cur" : a[0].className="cur";
-		}
+		var num,value="";
+		var href=window.location.href;
+		for(var i=0;i<a.length;i++){value=a[i].href;href==value ? num=i : null;}
+		num!=null ? a[num].className="cur" : a[0].className="cur";
 	};
 </script>

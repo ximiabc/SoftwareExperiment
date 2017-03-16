@@ -119,7 +119,7 @@ table{border-collapse: collapse;}
 .list_main .list_center_main .list_center{width:720px; margin:0 auto;}/*无左侧边栏的居中布局*/
 .list_main .list_center_main .list_mainleft{ width:240px; height:auto; float:left; display:inline-block;  padding-right:40px;}
 .list_main .list_center_main .list_mainleft dl dt{ width:240px; height:40px; line-height:40px; font-size:18px; color:#008FD8; background: url("../Images/list02.png") no-repeat scroll left transparent;}
-.list_main .list_center_main .list_mainleft dl dd a{line-height: 45px;color: #575757;font-size: 14px; display:block; border-bottom: 1px dashed #D6D6D6;background: url("../Images/list04.png") no-repeat scroll right transparent;}
+.list_main .list_center_main .list_mainleft dl dd a{height: 45px;line-height: 45px;color: #575757;font-size: 14px; display:block; border-bottom: 1px dashed #D6D6D6;background: url("../Images/list04.png") no-repeat scroll right transparent;}
 .list_main .list_center_main .list_mainleft dl dd.cur a{color: #008FD8;background: url("../Images/list05.png") no-repeat scroll right transparent;}
 .list_main .list_center_main .list_mainright{ width:720px; height:auto;   float:left; display:inline-block;}
 .list06{width:720px;height:33px;background: url("../Images/list06.png") no-repeat 0px 0px;}
@@ -155,8 +155,3 @@ table{border-collapse: collapse;}
 .foot_main{width:1000px;height:70px;margin:0 auto;text-align:center;padding-top:25px;}
 .foot_main p{padding-top:5px;color:#fff;}
 .foot_main p a,.foot_main p span{padding:5px;color:#fff;}
-
-/*教师详情卡*/
-.teacherCard{position:relative;height:70px;padding:5px 10px;}
-.teacherCard img{position:absolute;width:50px;height:70px;}
-.teacherCard .TCdtl{padding:5px 0 5px 75px;font-size:14px;line-height:20px;}

@@ -9,11 +9,8 @@ import com.softwareexper.service.SoftUserService;
 @Service
 @Transactional
 public class SoftUserServiceImpl extends BaseDaoImpl<SoftUser> implements SoftUserService{
-
-	@Override
 	public SoftUser userLogin(String username, String password) {
 		String hql ="FROM SoftUser s WHERE s.username=? AND s.password=?";
 		return (SoftUser) getSession().createQuery(hql).setParameter(0, username).setParameter(1, password).uniqueResult();
 	}
-
 }

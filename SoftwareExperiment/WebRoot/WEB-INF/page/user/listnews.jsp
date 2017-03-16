@@ -11,7 +11,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>郑州轻工业学院软件学院</title>
+<title>郑州轻工业学院软件学院实验示范中心</title>
 <link href="${pageContext.request.contextPath}/user/css/style.css"
 	type="text/css" rel="stylesheet" />
 </head>
@@ -53,7 +53,7 @@
 					<!-- 分页 -->
 					<div class="pageing">
 						<ul class="page">
-							<li><a href="#"><</a></li>
+							<li><a href="newsindex?pageNum=${pageNums -1}"><</a></li>
 							<s:iterator begin="pageBean.beginPageIndex"
 								end="pageBean.endPageIndex" var="pageNums">
 								<li
@@ -67,7 +67,7 @@
 								</li>
 							</s:iterator>
 
-							<li><a href="#">></a></li>
+							<li><a href="newsindex?pageNum=${pageNums }">></a></li>
 						</ul>
 						<!-- <ul class="pageingtz">
 							<li>跳转：<input type="text" class="input" />&nbsp;页&nbsp;<a

@@ -14,7 +14,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <meta http-equiv="X-UA-Compatible" content="IE=9">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>郑州轻工业学院</title>
+<title>郑州轻工业学院软件学院实验示范中心</title>
 <link href="${pageContext.request.contextPath}/user/css/style.css"
 	type="text/css" rel="stylesheet" />
 <script
@@ -72,15 +72,13 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 					<ul class="m2">
 						<!-- 新闻中心 -->
 						<s:iterator value="pageBeanNews.recordList" begin="0" end="4">
-							<li
-								style="background-image: url(${pageContext.request.contextPath}/user/Images/ban01.jpg);"><a
-								href="javascript:void(0)"></a></li>
+							<li style="background-image: url(${pageContext.request.contextPath}/uploads/files/${path });"><a href="newsview?id=${id }"></a></li>
 						</s:iterator>
 					</ul>
 					<ul class="s2">
 						<!-- 新闻中心 -->
 						<s:iterator value="pageBeanNews.recordList" begin="0" end="4">
-							<li class="cur">1</li>
+							<li>1</li>
 						</s:iterator>
 					</ul>
 				</div>
@@ -96,7 +94,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 									</span>
 								</dt>
 								<dd>
-									<a href="#" class="title01" title="${titles }"><i></i>${titles }</a>
+									<a href="newsview?id=${id }" class="title01" title="${titles }"><i></i>${titles }</a>
 									<p class="title02">${context }</p>
 								</dd>
 							</dl></li>
@@ -122,9 +120,9 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				<s:iterator value="pageBeanLabs.recordList" begin="0" end="8">
 					<li>
 						<dl>
-							<dt class="filedt"></dt>
+							<dt class="messdt"></dt>
 							<dd>
-								<a href="#" class="title03" title="${titles }">${titles }</a>
+								<a href="labsdesc?id=${id }" class="title03" title="${titles }">${titles }</a>
 								<span class="title04"> <s:date name="date" format="yyyy-MM-dd"/> </span>
 							</dd>
 						</dl></li>
@@ -146,9 +144,9 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				<s:iterator value="pageBeanRules.recordList" begin="0" end="8">
 					<li>
 						<dl>
-							<dt class="messdt"></dt>
+							<dt class="filedt"></dt>
 							<dd>
-								<a href="#" class="title03" title="${titles }">${titles }</a>
+								<a href="ruledesc?id=${id }" class="title03" title="${titles }">${titles }</a>
 								<span class="title04"><s:date name="date" format="yyyy-MM-dd"/></span>
 							</dd>
 						</dl></li>
@@ -170,9 +168,9 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				<s:iterator value="pageBeanDevices.recordList" begin="0" end="8">
 					<li>
 						<dl>
-							<dt class="perdt"></dt>
+							<dt class="setdt"></dt>
 							<dd>
-								<a href="#" class="title03" title="${titles }">${titles }</a> <span
+								<a href="devicedesc?id=${id }" class="title03" title="${titles }">${titles }</a> <span
 									class="title04"><s:date name="date" format="yyyy-MM-dd"/></span>
 							</dd>
 						</dl></li>
@@ -194,9 +192,9 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				<s:iterator value="pageBeanReports.recordList" begin="0" end="8">
 					<li>
 						<dl>
-							<dt class="setdt"></dt>
+							<dt class="perdt"></dt>
 							<dd>
-								<a href="#" class="title03" title="${titles }">${titles }</a> <span
+								<a href="reportview?id=${id }" class="title03" title="${titles }">${titles }</a> <span
 									class="title04"><s:date name="date" format="yyyy-MM-dd"/></span>
 							</dd>
 						</dl></li>

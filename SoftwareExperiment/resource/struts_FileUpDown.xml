@@ -24,7 +24,6 @@
 		<action name="down_*" class="com.softwareexper.action.upload.DownAction" method="{1}">
 			<!-- 列表展示 -->
 			<result name="list">/WEB-INF/page/upload/Resource.jsp</result>
-			
 			<!-- 下载操作 -->
 			<result name="download" type="stream">
 				<!-- 运行下载的文件的类型:指定为所有的二进制文件类型 -->
@@ -34,7 +33,7 @@
 			   <!-- 下载头，包括：浏览器显示的文件名 -->
 			   <param name="contentDisposition">attachment;filename=${downFileName}</param>
 			 	<!-- 缓冲区大小设置 -->
-			   <param name="bufferSize">1024</param>
+			   <param name="bufferSize">10240</param>
 			</result>
 		</action>
 	

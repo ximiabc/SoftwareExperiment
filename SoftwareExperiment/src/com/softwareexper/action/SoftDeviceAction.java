@@ -1,18 +1,15 @@
 package com.softwareexper.action;
 
+import java.io.IOException;
 import java.util.Date;
 import java.util.List;
 
 import org.apache.struts2.ServletActionContext;
 
 import com.opensymphony.xwork2.ActionContext;
-import com.opensymphony.xwork2.ActionSupport;
 import com.opensymphony.xwork2.util.ValueStack;
 import com.softwareexper.base.BaseAction;
-import com.softwareexper.orm.SoftCenter;
 import com.softwareexper.orm.SoftDevice;
-import com.softwareexper.orm.SoftDevice;
-import com.softwareexper.service.SoftDeviceService;
 import com.softwareexper.tools.HqlHelper;
 import com.softwareexper.tools.PageBean;
 
@@ -141,7 +138,14 @@ public class SoftDeviceAction extends BaseAction<SoftDevice>{
 		news.setDate(new Date());
 		news.setView(true);
 		news.setCount(0);
-		news.setPath(null);//暂时为空
+		try {
+			news.setPath(addFile());
+		} catch (IOException e) {
+			addFieldError("error", "上传失败！");
+			return "write";
+//			e.printStackTrace();
+		}
+		System.out.println(news.getPath()+"--------------------------");
 		softDeviceService.save(news);
 		return "add";
 	}

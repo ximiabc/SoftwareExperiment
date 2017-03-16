@@ -20,11 +20,21 @@ public class SoftNews {
 	private boolean view =true;//0显示 1不显示
 //	浏览量
 	private Integer count;
+//	照片路径
+	private String path;
 //	图片URL
 //	private String image;
 	
 	public SoftNews() {
 	}
+	public String getPath() {
+		return path;
+	}
+
+	public void setPath(String path) {
+		this.path = path;
+	}
+
 
 	public Integer getId() {
 		return id;

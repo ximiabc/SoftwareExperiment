@@ -32,31 +32,31 @@ public class UploadAction extends ActionSupport{
 		this.fileContentType = fileContentType;
 	}
 
-	public String execute() throws Exception {
-		uploads();
-		return "success";
-	}
+//	public String execute() throws Exception {
+//		uploads();
+//		return "success";
+//	}
 
-	//上传
-	public String uploads() throws IOException{
-		addData();
-		return "upload";
-	}
-
-	//		保存到数据库
-	public String addData() throws IOException{
-		//			data_data datas=new data_data();
-		//			datas.setData_class(classService.findByName(claName).get(0));
-		//			datas.setDates(new Date());
-		//			datas.setFriends(getAdmins().getPickName());//getAdmins().getId().toString());
-		//			datas.setMessage(getModel().getMessage());
-		//			datas.setName(getModel().getName());
-		//			datas.setUrl_data(addFile()); 
-		//			datas.setDown_num(0);
-		//			dataService.save(datas);
-		System.out.println(addFile()+"+++++++++++++++++++++++");
-		return "data";
-	}
+//	//上传
+//	public String uploads() throws IOException{
+//		addData();
+//		return "upload";
+//	}
+//
+//	//		保存到数据库
+//	public String addData() throws IOException{
+//		//			data_data datas=new data_data();
+//		//			datas.setData_class(classService.findByName(claName).get(0));
+//		//			datas.setDates(new Date());
+//		//			datas.setFriends(getAdmins().getPickName());//getAdmins().getId().toString());
+//		//			datas.setMessage(getModel().getMessage());
+//		//			datas.setName(getModel().getName());
+//		//			datas.setUrl_data(addFile()); 
+//		//			datas.setDown_num(0);
+//		//			dataService.save(datas);
+//		System.out.println(addFile()+"+++++++++++++++++++++++");
+//		return "data";
+//	}
 
 	//		添加功能，添加成功返回path路径，否则返回null
 	/**

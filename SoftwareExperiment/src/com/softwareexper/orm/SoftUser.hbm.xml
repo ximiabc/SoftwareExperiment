@@ -28,5 +28,7 @@
         <property name="ipaddress" type="string">
             <column name="IPADDRESS" />
         </property>
+                <property name="rule" type="string">
+        </property>
     </class>
 </hibernate-mapping>

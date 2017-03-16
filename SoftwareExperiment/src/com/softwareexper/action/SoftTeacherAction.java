@@ -1,12 +1,12 @@
 package com.softwareexper.action;
 
+import java.io.IOException;
 import java.util.Date;
 import java.util.List;
 
 import org.apache.struts2.ServletActionContext;
 
 import com.opensymphony.xwork2.ActionContext;
-import com.opensymphony.xwork2.ActionSupport;
 import com.opensymphony.xwork2.util.ValueStack;
 import com.softwareexper.base.BaseAction;
 import com.softwareexper.orm.SoftTeacher;
@@ -132,15 +132,23 @@ public class SoftTeacherAction extends BaseAction<SoftTeacher>{
 	
 //	写入数据
 	public String write() {
+		String path = null;
 		SoftTeacher news=new SoftTeacher();
 		news.setTitles(getModel().getTitles());
 		news.setContext(getModel().getContext());
 		news.setDate(new Date());
 		news.setView(true);
 		news.setCount(0);
-		news.setPath(null);//暂时为空
+		try {
+			news.setPath(addFile());
+		} catch (IOException e) {
+			addFieldError("error", "上传失败！");
+			return "write";
+//			e.printStackTrace();
+		}
+		System.out.println(news.getPath()+"--------------------------");
 		teacherService.save(news);
-		return "add";
+		return "write";
 	}
 	
 //	前台功能*******************

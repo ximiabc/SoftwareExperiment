@@ -9,7 +9,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>郑州轻工业学院软件学院</title>
+<title>郑州轻工业学院软件学院实验示范中心</title>
 <link href="${pageContext.request.contextPath}/user/css/style.css"
 	type="text/css" rel="stylesheet" />
 </head>
@@ -26,7 +26,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 		<div class="list_center_main">
 			<div class="list_mainleft">
 				<dl>
-					<dt>栏目中心</dt>
+					<dt>实验仪器</dt>
 					<s:iterator value="pageBean.recordList">
 					<dd class="cur">
 						<a href="devicedesc?id=${id }">${titles }</a>
@@ -39,10 +39,10 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 					<div class="line"></div>
 					<div class="list06">
 						<div class="list06left list06left">
-							<h4 class="h4">通知公告&nbsp;&nbsp;Announcements</h4>
+							<h4 class="h4">实验仪器&nbsp;&nbsp;</h4>
 						</div>
 						<div class="list06right list06right licon">
-							<span class="a13">当前位置：首页 > 通知公告</span>
+							<span class="a13">当前位置：首页 > 实验仪器</span>
 						</div>
 					</div>
 					<ul>
@@ -67,7 +67,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 						</div>
 						</c:if>
 						<c:if test="${beans == null }">
-							<center>暂无内容</center>
+							<center>请点击侧栏查看详情</center>
 						</c:if>
 					</ul>
 				</div>

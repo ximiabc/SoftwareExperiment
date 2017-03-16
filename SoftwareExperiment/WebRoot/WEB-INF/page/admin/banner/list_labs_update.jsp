@@ -12,7 +12,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>无标题文档</title>
+<title>实验教学</title>
 <link href="${pageContext.request.contextPath}/admin/css/style.css"
 	rel="stylesheet" type="text/css" />
 <script type="text/javascript"
@@ -61,7 +61,7 @@
 		<ul class="placeul">
 			<li><a href="#">首页</a>
 			</li>
-			<li><a href="#">课程列表</a>
+			<li><a href="#">实验教学</a>
 			</li>
 		</ul>
 	</div>
@@ -82,7 +82,7 @@
 				<tr>
 					<th>编号</th>
 					<th width="100px;">缩略图</th>
-					<th>新闻标题</th>
+					<th>标题</th>
 					<th>浏览量</th>
 					<th>发布时间</th>
 					<th>操作</th>
@@ -113,7 +113,7 @@
 		<link href="${pageContext.request.contextPath}/user/css/style.css" type="text/css" rel="stylesheet" />
 		<div class="pageing">
 			<ul class="page">
-				<li><a href="#"><</a></li>
+				<li><a href="Managelabsupdate?pageNum=${pageNums -1}"><</a></li>
 				<s:iterator begin="pageBean.beginPageIndex"
 					end="pageBean.endPageIndex" var="pageNums">
 					<li
@@ -126,7 +126,7 @@
 					</li>
 				</s:iterator>
 
-				<li><a href="#">></a></li>
+				<li><a href="Managelabsupdate?pageNum=${pageNums }">></a></li>
 			</ul>
 		</div>
 	</div>

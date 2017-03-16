@@ -11,7 +11,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>中心概括</title>
+<title>后台管理</title>
 <link href="${pageContext.request.contextPath}/admin/css/style.css"
 	rel="stylesheet" type="text/css" />
 <script type="text/javascript"
@@ -35,7 +35,7 @@
 		<ul class="placeul">
 			<li><a href="#">首页</a>
 			</li>
-			<li><a href="#">新闻中心</a>
+			<li><a href="#">申报材料</a>
 			</li>
 		</ul>
 	</div>
@@ -44,8 +44,23 @@
 		var ue = UE.getEditor('editor');
 	</script>
 	<center>
-	<form action="Managereportwrite">
-		<center style="font-size: 20px;font-style: !important;">请添加新闻标题：<input type="text" style="font-size: 20px;font-style: !important;background-color:#cceeff;" name="titles"/></center>
+<%-- 	<form action="Managereportwrite" method="post">
+		<center style="font-size: 20px;font-style: !important;">请添加标题：<input type="text" style="font-size: 20px;font-style: !important;background-color:#cceeff;" name="titles"/></center>
+		<script name="context" id="editor" type="text/plain" style="width:1024px;height:500px;"></script>
+		<input class="submitBtn" type="submit" name="提交"/>
+	</form> --%>
+	<s:fielderror></s:fielderror>
+	<form action="Managereportwrite" method="post" enctype="multipart/form-data">
+		<center style="font-size: 20px;_zoom:1;overflow:hidden;">
+		<div style="float:left; position:relative;top:70px;left:300px;">请添加标题：<input type="text" style="font-size: 20px;font-style: !important;background-color:#cceeff;" name="titles"/>
+		</div>
+		<div class="file-box" style="float:left;left:400px;">
+					<img id="file_img" style="height:150px; width:120px;"
+						src="${pageContext.request.contextPath}/admin/images/uploadword.jpg">
+						<input type="file" name="file" class="file" id="fileField"
+						size="28" onchange="previewImage(this)" />
+		</div>
+		</center>
 		<script name="context" id="editor" type="text/plain" style="width:1024px;height:500px;"></script>
 		<input class="submitBtn" type="submit" name="提交"/>
 	</form>

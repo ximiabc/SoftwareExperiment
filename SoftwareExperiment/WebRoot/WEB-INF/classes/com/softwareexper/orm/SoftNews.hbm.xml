@@ -3,28 +3,29 @@
 "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
 <!-- 新闻中心 -->
 <hibernate-mapping>
-    <class name="com.softwareexper.orm.SoftNews" table="soft_news">
-        <id name="id" type="integer">
-            <column name="id" />
-            <generator class="native" />
-        </id>
-        
-        <property name="titles" type="string">
-        </property>
-        
-        <property name="context" type="text">
-        </property>
-        
-        <property name="date" type="date">
-        </property>
-        
-        <property name="view" type="boolean">
-        </property>
-        
-        <property name="count" type="integer">
-        </property>
-        
-        <!-- <property name="image" type="string">
-        </property> -->
-    </class>
+	<class name="com.softwareexper.orm.SoftNews" table="soft_news">
+		<id name="id" type="integer">
+			<column name="id" />
+			<generator class="native" />
+		</id>
+
+		<property name="titles" type="string">
+		</property>
+
+		<property name="context" type="text">
+		</property>
+
+		<property name="date" type="date">
+		</property>
+
+		<property name="view" type="boolean">
+		</property>
+
+		<property name="count" type="integer">
+		</property>
+		<property name="path" type="string">
+		</property>
+
+		<!-- <property name="image" type="string"> </property> -->
+	</class>
 </hibernate-mapping>

@@ -9,7 +9,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>郑州轻工业学院软件学院</title>
+<title>郑州轻工业学院软件学院实验示范中心</title>
 <link href="${pageContext.request.contextPath}/user/css/style.css"
 	type="text/css" rel="stylesheet" />
 </head>
@@ -42,7 +42,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 								<dl>
 									<dt class="messdt"></dt>
 									<dd>
-										<a href="reportview?id=${id }" class="title03 hovercolor" title="欢迎观看">${titles
+										<a href="reportview?id=${id }" class="title03 hovercolor" title="欢迎点击">${titles
 											} </a> <span class="title04 gray"> ${date }</span>
 									</dd>
 								</dl></li>
@@ -51,7 +51,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 					<!-- 分页 -->
 					<div class="pageing">
 						<ul class="page">
-							<li><a href="#"><</a></li>
+							<li><a href="reportindexs?pageNum=${pageNums -1}"><</a></li>
 							<s:iterator begin="pageBean.beginPageIndex"
 								end="pageBean.endPageIndex" var="pageNums">
 								<li
@@ -65,7 +65,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 								</li>
 							</s:iterator>
 
-							<li><a href="#">></a></li>
+							<li><a href="reportindexs?pageNum=${pageNums }">></a></li>
 						</ul>
 						<!-- <ul class="pageingtz">
 							<li>跳转：<input type="text" class="input" />&nbsp;页&nbsp;<a
